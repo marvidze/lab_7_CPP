@@ -39,6 +39,7 @@ void BinarySearchTree::createTree(int min, int max, int count) {
     int range = max - min + 1;
     for (int i = 0; i < count; i++) {
         int value = min + (std::rand() % range);
+        std::cout << "Добавляем: " << value << std::endl;
         insert(value);
     }
 }
